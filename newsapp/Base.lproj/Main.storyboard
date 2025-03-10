@@ -1,32 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ILx-sd-qx0">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Onboarding View Controller-->
+        <scene sceneID="XpO-fF-aeF">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="newsapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ILx-sd-qx0" customClass="OnboardingViewController" customModule="newsapp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayU-io-bub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="-268"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AUy-G0-FDk">
+            <objects>
+                <viewController storyboardIdentifier="onboardingOne" id="ldt-7u-6B4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0QI-BG-Wmh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to NEWS, where news meets simplicity." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlE-54-pEG">
+                                <rect key="frame" x="60" y="99" width="273" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="ahs-Jf-wpy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obImageOne" translatesAutoresizingMaskIntoConstraints="NO" id="mu1-rX-2cV">
+                                <rect key="frame" x="20" y="259" width="353" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="cQz-xx-YL5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brings you curated news from trusted sources, designed to keep you informed without overwhelming you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0u-tU-QnS">
+                                <rect key="frame" x="20" y="539" width="353" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BIU-9c-hV0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUK-zY-IAx">
+                                <rect key="frame" x="20" y="738" width="353" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="LKV-H1-nWO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="VYe-Fb-PQM">
+                                <rect key="frame" x="40" y="700" width="313" height="18"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="GT8-RD-zd8"/>
+                                </constraints>
+                                <imageReference key="image" image="arrow.right" catalog="system" symbolScale="large"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xHx-gW-5h5"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VUK-zY-IAx" firstAttribute="top" secondItem="VYe-Fb-PQM" secondAttribute="bottom" constant="20" id="32B-Dw-gLu"/>
+                            <constraint firstItem="mu1-rX-2cV" firstAttribute="leading" secondItem="xHx-gW-5h5" secondAttribute="leading" constant="20" id="3WT-2P-JnB"/>
+                            <constraint firstItem="xHx-gW-5h5" firstAttribute="trailing" secondItem="mu1-rX-2cV" secondAttribute="trailing" constant="20" id="8Ae-9n-LxX"/>
+                            <constraint firstItem="xHx-gW-5h5" firstAttribute="trailing" secondItem="VYe-Fb-PQM" secondAttribute="trailing" constant="40" id="Kjh-cr-p94"/>
+                            <constraint firstItem="VYe-Fb-PQM" firstAttribute="leading" secondItem="xHx-gW-5h5" secondAttribute="leading" constant="40" id="L3I-gU-YGu"/>
+                            <constraint firstItem="jlE-54-pEG" firstAttribute="top" secondItem="xHx-gW-5h5" secondAttribute="top" constant="40" id="PzI-E8-2Og"/>
+                            <constraint firstItem="xHx-gW-5h5" firstAttribute="trailing" secondItem="VUK-zY-IAx" secondAttribute="trailing" constant="20" id="S8v-Lx-gpl"/>
+                            <constraint firstItem="xHx-gW-5h5" firstAttribute="bottom" secondItem="VUK-zY-IAx" secondAttribute="bottom" constant="60" id="XkO-Jq-kCI"/>
+                            <constraint firstAttribute="trailing" secondItem="y0u-tU-QnS" secondAttribute="trailing" constant="20" id="Xr7-KP-HpR"/>
+                            <constraint firstItem="y0u-tU-QnS" firstAttribute="top" secondItem="mu1-rX-2cV" secondAttribute="bottom" constant="80" id="ZTX-aZ-36f"/>
+                            <constraint firstItem="xHx-gW-5h5" firstAttribute="trailing" secondItem="jlE-54-pEG" secondAttribute="trailing" constant="60" id="dme-D4-9s6"/>
+                            <constraint firstItem="mu1-rX-2cV" firstAttribute="top" secondItem="jlE-54-pEG" secondAttribute="bottom" constant="40" id="e67-tE-QjL"/>
+                            <constraint firstItem="jlE-54-pEG" firstAttribute="leading" secondItem="xHx-gW-5h5" secondAttribute="leading" constant="60" id="grd-XS-O5a"/>
+                            <constraint firstItem="VUK-zY-IAx" firstAttribute="leading" secondItem="xHx-gW-5h5" secondAttribute="leading" constant="20" id="w4r-yr-q5k"/>
+                            <constraint firstItem="y0u-tU-QnS" firstAttribute="leading" secondItem="xHx-gW-5h5" secondAttribute="leading" constant="20" id="waY-tV-0re"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MpV-ib-TVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823.66412213740455" y="-268.3098591549296"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RK6-ZT-Swb">
+            <objects>
+                <viewController storyboardIdentifier="onboardingTwo" id="lCF-JI-TR2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2tM-a3-bH6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Made Simple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4z-8S-DSB">
+                                <rect key="frame" x="20" y="119" width="353" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iOU-7H-xCG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryx-Ux-IPJ">
+                                <rect key="frame" x="20" y="189" width="353" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Ozq-hq-NDz"/>
+                                </constraints>
+                                <string key="text">NEWS delivers relevant news stories when you want them, how you want them. No clutter. No complexity. Just news that matters to you.</string>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take control of your daily news experience and discover what's happening in the world at your own pace." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qo-5F-wCP">
+                                <rect key="frame" x="20" y="529" width="353" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Z2H-gY-EBY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="newspaper" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ukO-I0-Uub">
+                                <rect key="frame" x="20" y="429.33333333333331" width="353" height="59.666666666666686"/>
+                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Myn-il-TcN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2T-Yr-Azy">
+                                <rect key="frame" x="50" y="713" width="293" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="BAL-ah-1ix"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Get Started" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Shh-0J-YY7" kind="presentation" modalPresentationStyle="fullScreen" id="HgX-IH-g5L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Iz-LO-U7r"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I2T-Yr-Azy" firstAttribute="leading" secondItem="6Iz-LO-U7r" secondAttribute="leading" constant="50" id="1Wr-tQ-9TD"/>
+                            <constraint firstItem="6Iz-LO-U7r" firstAttribute="bottom" secondItem="I2T-Yr-Azy" secondAttribute="bottom" constant="70" id="61I-1H-ufa"/>
+                            <constraint firstItem="0qo-5F-wCP" firstAttribute="leading" secondItem="6Iz-LO-U7r" secondAttribute="leading" constant="20" id="CDL-VD-dun"/>
+                            <constraint firstItem="ukO-I0-Uub" firstAttribute="leading" secondItem="6Iz-LO-U7r" secondAttribute="leading" constant="20" id="J9p-68-5tK"/>
+                            <constraint firstItem="6Iz-LO-U7r" firstAttribute="trailing" secondItem="I2T-Yr-Azy" secondAttribute="trailing" constant="50" id="O7y-xJ-Xe7"/>
+                            <constraint firstItem="6Iz-LO-U7r" firstAttribute="trailing" secondItem="ukO-I0-Uub" secondAttribute="trailing" constant="20" id="R7q-SU-JiX"/>
+                            <constraint firstItem="6Iz-LO-U7r" firstAttribute="trailing" secondItem="ryx-Ux-IPJ" secondAttribute="trailing" constant="20" id="TeV-6u-VXr"/>
+                            <constraint firstItem="ryx-Ux-IPJ" firstAttribute="leading" secondItem="6Iz-LO-U7r" secondAttribute="leading" constant="20" id="Vx1-Kk-zb4"/>
+                            <constraint firstItem="0qo-5F-wCP" firstAttribute="top" secondItem="ukO-I0-Uub" secondAttribute="bottom" constant="40" id="bEy-wX-dp5"/>
+                            <constraint firstItem="ukO-I0-Uub" firstAttribute="top" secondItem="ryx-Ux-IPJ" secondAttribute="bottom" constant="40" id="ewB-OB-ZwD"/>
+                            <constraint firstItem="a4z-8S-DSB" firstAttribute="leading" secondItem="6Iz-LO-U7r" secondAttribute="leading" constant="20" id="l3z-wL-n6s"/>
+                            <constraint firstItem="6Iz-LO-U7r" firstAttribute="trailing" secondItem="a4z-8S-DSB" secondAttribute="trailing" constant="20" id="lHl-1h-8Bq"/>
+                            <constraint firstItem="a4z-8S-DSB" firstAttribute="top" secondItem="6Iz-LO-U7r" secondAttribute="top" constant="60" id="nK0-IV-0Ho"/>
+                            <constraint firstItem="6Iz-LO-U7r" firstAttribute="trailing" secondItem="0qo-5F-wCP" secondAttribute="trailing" constant="20" id="qIr-GE-FxY"/>
+                            <constraint firstItem="ryx-Ux-IPJ" firstAttribute="top" secondItem="a4z-8S-DSB" secondAttribute="bottom" constant="40" id="xNy-9w-gfR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m30-IY-HrQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600.7633587786258" y="-268.3098591549296"/>
+        </scene>
+        <!--Home Screen View Controller-->
+        <scene sceneID="3NL-bK-BYi">
+            <objects>
+                <viewController id="Shh-0J-YY7" customClass="HomeScreenViewController" customModule="newsapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zQd-1b-b5e">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zYW-OC-Hg1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFi-qz-JeT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="-2"/>
+            <point key="canvasLocation" x="2428" y="-268"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="newspaper" catalog="system" width="128" height="111"/>
+        <image name="obImageOne" width="682.66668701171875" height="682.66668701171875"/>
+        <namedColor name="backgroundColor">
+            <color red="0.98431372549019602" green="0.96078431372549022" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
