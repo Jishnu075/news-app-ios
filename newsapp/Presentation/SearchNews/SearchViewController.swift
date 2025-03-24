@@ -8,22 +8,29 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
+    
+    private let searchController = UISearchController(searchResultsController: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
-        // Do any additional setup after loading the view.
+        configureNavigationBar()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configureNavigationBar() {
+        navigationItem.title = "Search"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        navigationItem.searchController = searchController
+        searchController.searchBar.placeholder = "Enter the category you want to search..."
+        searchController.searchBar.delegate = self
     }
-    */
 
 }
+//Not adding searchresultingdgte, nothing is needed when the text is being typed as of now.
+extension SearchViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("clicked search button on kybrd")
+    }
+    
+}
+
