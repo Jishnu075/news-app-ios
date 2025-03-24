@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="823.66412213740455" y="-268.3098591549296"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Two View Controller-->
         <scene sceneID="RK6-ZT-Swb">
             <objects>
-                <viewController storyboardIdentifier="onboardingTwo" id="lCF-JI-TR2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboardingTwo" id="lCF-JI-TR2" customClass="OBPageTwoViewController" customModule="newsapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2tM-a3-bH6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,6 +148,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="getStartedBtnTapped:" destination="lCF-JI-TR2" eventType="touchUpInside" id="7Sn-0h-q5J"/>
                                     <segue destination="Shh-0J-YY7" kind="presentation" modalPresentationStyle="fullScreen" id="HgX-IH-g5L"/>
                                 </connections>
                             </button>
@@ -198,7 +199,7 @@
         <image name="newspaper" catalog="system" width="128" height="111"/>
         <image name="obImageOne" width="682.66668701171875" height="682.66668701171875"/>
         <namedColor name="backgroundColor">
-            <color red="0.98431372549019602" green="0.96078431372549022" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98400002717971802" green="0.96100002527236938" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
