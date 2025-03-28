@@ -100,5 +100,11 @@ extension HeadlinesViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let article = dummyArticles[indexPath.row]
+        let newsDetailVC = NewsDetailViewController(article: article)
+        navigationController?.pushViewController(newsDetailVC, animated: true)
+    }
+    
     
 }
