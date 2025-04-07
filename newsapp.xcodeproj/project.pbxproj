@@ -284,6 +284,8 @@
 /* Begin XCBuildConfiguration section */
 		8D820CC02D770EDB00796465 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 8D820C982D770ED800796465 /* newsapp */;
+			baseConfigurationReferenceRelativePath = App/Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +313,8 @@
 		};
 		8D820CC12D770EDB00796465 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 8D820C982D770ED800796465 /* newsapp */;
+			baseConfigurationReferenceRelativePath = App/Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +342,8 @@
 		};
 		8D820CC22D770EDB00796465 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 8D820C982D770ED800796465 /* newsapp */;
+			baseConfigurationReferenceRelativePath = App/Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -401,6 +407,8 @@
 		};
 		8D820CC32D770EDB00796465 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 8D820C982D770ED800796465 /* newsapp */;
+			baseConfigurationReferenceRelativePath = App/Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
