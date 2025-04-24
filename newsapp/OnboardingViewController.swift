@@ -22,10 +22,21 @@ class OnboardingViewController: UIViewController
 //    ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .red
+        collectionView.delegate = self
+        collectionView.dataSource = self
 //        self.dataSource = self
 //        if let firstVC = vcArray.first {
 //            setViewControllers([firstVC], direction: .forward, animated: true)
 //        }
+    }
+    @IBAction func getStartedBtnTapped(_ sender: Any) {
+        //TODO add logic for adding hasCompletedOB to userdefaults
+        let tabBarController = MainTabBarController()
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let sceneDelegate = windowScene.delegate as? SceneDelegate, let window = sceneDelegate.window {
+            window.rootViewController = tabBarController
+            window.makeKeyAndVisible()
+        }
     }
     
 //    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -44,4 +55,31 @@ class OnboardingViewController: UIViewController
 //        guard nextIndex < vcArray.count else { return nil }
 //        return vcArray[nextIndex]
 //    }
+}
+extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 2
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if indexPath.item == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCell1", for: indexPath)
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCell2", for: indexPath)
+            return cell
+        }
+    }
+    
+
+    
+    
+}
+extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+    
 }

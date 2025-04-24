@@ -29,91 +29,137 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCell1" id="kM6-K9-VTM">
-                                        <rect key="frame" x="0.0" y="2.6666666666666665" width="395" height="684"/>
+                                        <rect key="frame" x="0.0" y="2.6666666666666665" width="393" height="684"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aqu-au-xkO">
-                                            <rect key="frame" x="0.0" y="0.0" width="395" height="684"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="684"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to NEWS, where news meets simplicity." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jlE-54-pEG">
-                                                    <rect key="frame" x="8" y="0.0" width="379" height="205"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to NEWS, where news meets simplicity." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlE-54-pEG">
+                                                    <rect key="frame" x="20" y="60.000000000000007" width="353" height="66.666666666666686"/>
                                                     <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="29"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obImageOne" id="B4a-mg-VFw">
-                                                    <rect key="frame" x="0.0" y="213" width="393" height="219"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="obImageOne" translatesAutoresizingMaskIntoConstraints="NO" id="B4a-mg-VFw">
+                                                    <rect key="frame" x="71.666666666666686" y="217" width="250" height="250"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="250" id="Edx-kF-LQ8"/>
+                                                        <constraint firstAttribute="height" constant="250" id="ybl-R9-ebu"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" id="1pk-Dc-zRG">
-                                                    <rect key="frame" x="187" y="621" width="20" height="26"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <imageReference key="image" image="arrow.right" catalog="system" symbolScale="large"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brings you curated news from trusted sources, designed to keep you informed without overwhelming you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rqo-Rp-G0i">
-                                                    <rect key="frame" x="7" y="440" width="379" height="151"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brings you curated news from trusted sources, designed to keep you informed without overwhelming you." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqo-Rp-G0i">
+                                                    <rect key="frame" x="8" y="497" width="377" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="FOz-Gx-eI6"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugp-bx-hY9">
-                                                    <rect key="frame" x="0.0" y="635.33333333333337" width="394" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugp-bx-hY9">
+                                                    <rect key="frame" x="153.33333333333334" y="639" width="86.666666666666657" height="20"/>
                                                     <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" id="1pk-Dc-zRG">
+                                                    <rect key="frame" x="187" y="601" width="20" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <imageReference key="image" image="arrow.right" catalog="system" symbolScale="large"/>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jlE-54-pEG" firstAttribute="leading" secondItem="aqu-au-xkO" secondAttribute="leading" constant="20" symbolic="YES" id="4Bn-Ns-9VU"/>
+                                                <constraint firstItem="jlE-54-pEG" firstAttribute="top" secondItem="aqu-au-xkO" secondAttribute="top" constant="60" id="8qV-NW-sKd"/>
+                                                <constraint firstItem="B4a-mg-VFw" firstAttribute="centerY" secondItem="aqu-au-xkO" secondAttribute="centerY" id="DSo-Hm-7aO"/>
+                                                <constraint firstItem="ugp-bx-hY9" firstAttribute="centerX" secondItem="aqu-au-xkO" secondAttribute="centerX" id="Gvp-Go-d2L"/>
+                                                <constraint firstAttribute="bottom" secondItem="ugp-bx-hY9" secondAttribute="bottom" constant="25" id="HXN-nv-JJX"/>
+                                                <constraint firstItem="rqo-Rp-G0i" firstAttribute="top" secondItem="B4a-mg-VFw" secondAttribute="bottom" constant="30" id="LHe-f1-alp"/>
+                                                <constraint firstItem="B4a-mg-VFw" firstAttribute="centerX" secondItem="aqu-au-xkO" secondAttribute="centerX" id="Vgu-oP-lCF"/>
+                                                <constraint firstAttribute="trailing" secondItem="rqo-Rp-G0i" secondAttribute="trailing" constant="8" id="Ywf-3j-WgL"/>
+                                                <constraint firstAttribute="trailing" secondItem="jlE-54-pEG" secondAttribute="trailing" constant="20" symbolic="YES" id="k92-VZ-hC3"/>
+                                                <constraint firstItem="rqo-Rp-G0i" firstAttribute="leading" secondItem="aqu-au-xkO" secondAttribute="leading" constant="8" id="vx9-2C-YxY"/>
+                                                <constraint firstItem="1pk-Dc-zRG" firstAttribute="top" secondItem="rqo-Rp-G0i" secondAttribute="bottom" constant="24" id="xSz-fs-MbJ"/>
+                                                <constraint firstItem="ugp-bx-hY9" firstAttribute="top" secondItem="1pk-Dc-zRG" secondAttribute="bottom" constant="12" id="zGl-gk-ug2"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="393" height="684"/>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="OnboardingCell2" id="Jok-Ny-Zki">
-                                        <rect key="frame" x="405" y="2.6666666666666665" width="395" height="684"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="OnboardingCell2" id="Jok-Ny-Zki">
+                                        <rect key="frame" x="403" y="2.6666666666666665" width="395" height="684"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="m7t-O4-pJM">
                                             <rect key="frame" x="0.0" y="0.0" width="395" height="684"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mgx-BY-bmo">
-                                                    <rect key="frame" x="8" y="92" width="379" height="189"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgx-BY-bmo">
+                                                    <rect key="frame" x="8" y="89.666666666666686" width="379" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="zwM-Es-Xng"/>
+                                                    </constraints>
                                                     <string key="text">NEWS delivers relevant news stories when you want them, how you want them. No clutter. No complexity. Just news that matters to you.</string>
                                                     <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News Made Simple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4z-8S-DSB">
-                                                    <rect key="frame" x="21" y="54" width="353" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="News Made Simple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4z-8S-DSB">
+                                                    <rect key="frame" x="21" y="53.999999999999993" width="353" height="27.666666666666664"/>
                                                     <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="newspaper" catalog="system" id="7Gc-lF-sMK">
-                                                    <rect key="frame" x="56" y="289" width="282" height="110"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="newspaper" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Gc-lF-sMK">
+                                                    <rect key="frame" x="50" y="239.99999999999997" width="295" height="119.66666666666666"/>
                                                     <color key="tintColor" systemColor="systemGray2Color"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="jxx-q1-PlR"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Take control of your daily news experience and discover what's happening in the world at your own pace." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fvc-1J-zhn">
-                                                    <rect key="frame" x="8" y="454" width="379" height="127"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Take control of your daily news experience and discover what's happening in the world at your own pace." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvc-1J-zhn">
+                                                    <rect key="frame" x="8" y="409.66666666666669" width="379" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="ZzK-YA-YJ2"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQm-DH-c2d">
-                                                    <rect key="frame" x="45" y="609" width="293" height="35"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQm-DH-c2d">
+                                                    <rect key="frame" x="97.666666666666686" y="609.66666666666663" width="200" height="34.333333333333371"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Ihs-Ym-A3x"/>
+                                                    </constraints>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="tinted" title="Get Started" cornerStyle="capsule">
                                                         <backgroundConfiguration key="background"/>
                                                         <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="getStartedBtnTapped:" destination="ghj-lY-FMZ" eventType="touchUpInside" id="YLB-IA-X6c"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Mgx-BY-bmo" firstAttribute="top" secondItem="a4z-8S-DSB" secondAttribute="bottom" constant="8" symbolic="YES" id="08c-Sg-oxY"/>
+                                                <constraint firstItem="a4z-8S-DSB" firstAttribute="top" secondItem="m7t-O4-pJM" secondAttribute="top" constant="53.999999999999993" id="4iB-PD-CIk"/>
+                                                <constraint firstItem="a4z-8S-DSB" firstAttribute="leading" secondItem="m7t-O4-pJM" secondAttribute="leading" constant="21" id="9rc-TD-VhB"/>
+                                                <constraint firstAttribute="bottom" secondItem="NQm-DH-c2d" secondAttribute="bottom" constant="40" id="JEj-kx-e7y"/>
+                                                <constraint firstItem="NQm-DH-c2d" firstAttribute="centerX" secondItem="m7t-O4-pJM" secondAttribute="centerX" id="QNi-Oh-UIg"/>
+                                                <constraint firstItem="7Gc-lF-sMK" firstAttribute="top" secondItem="Mgx-BY-bmo" secondAttribute="bottom" constant="50" id="Tdn-2A-PB7"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mgx-BY-bmo" secondAttribute="trailing" constant="8" id="VYz-q6-dAY"/>
+                                                <constraint firstItem="NQm-DH-c2d" firstAttribute="top" secondItem="Fvc-1J-zhn" secondAttribute="bottom" constant="100" id="WoC-ea-eO2"/>
+                                                <constraint firstItem="Mgx-BY-bmo" firstAttribute="leading" secondItem="m7t-O4-pJM" secondAttribute="leading" constant="8" id="aql-RN-Asj"/>
+                                                <constraint firstItem="Fvc-1J-zhn" firstAttribute="top" secondItem="7Gc-lF-sMK" secondAttribute="bottom" constant="50" id="c9q-gA-Vpc"/>
+                                                <constraint firstItem="Fvc-1J-zhn" firstAttribute="leading" secondItem="m7t-O4-pJM" secondAttribute="leading" constant="8" id="cxs-YQ-sYA"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fvc-1J-zhn" secondAttribute="trailing" constant="8" id="jky-XU-GRc"/>
+                                                <constraint firstAttribute="trailing" secondItem="a4z-8S-DSB" secondAttribute="trailing" constant="21" id="n4L-I2-8fY"/>
+                                                <constraint firstItem="7Gc-lF-sMK" firstAttribute="leading" secondItem="m7t-O4-pJM" secondAttribute="leading" constant="50" id="n8J-Zm-COf"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Gc-lF-sMK" secondAttribute="trailing" constant="50" id="nKR-AL-ZJm"/>
+                                                <constraint firstItem="Mgx-BY-bmo" firstAttribute="top" secondItem="a4z-8S-DSB" secondAttribute="bottom" constant="8" symbolic="YES" id="uif-mC-2HM"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
@@ -142,12 +188,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CN1-wr-wGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486.25954198473278" y="-268.3098591549296"/>
+            <point key="canvasLocation" x="1391.6030534351144" y="-268.3098591549296"/>
         </scene>
-        <!--Home Screen View Controller-->
+        <!--Headlines View Controller-->
         <scene sceneID="3NL-bK-BYi">
             <objects>
-                <viewController id="Shh-0J-YY7" customClass="HomeScreenViewController" customModule="newsapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Shh-0J-YY7" customClass="HeadlinesViewController" customModule="newsapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQd-1b-b5e">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
